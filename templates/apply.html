@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Job Application Form</h1>
+
+        <form action="/apply" method="POST">
+            <div class="form-group">
+                <label for="serialno">Serial Number</label>
+                <input type="text" class="form-control" name="serialno" placeholder="Enter Serial Number">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter Name">
+            </div>
+
+            <div class="form-group">
+                <label for="qualifications">Qualifications</label>
+                <select class="form-control" name="qualifications">
+                    <option>Degree</option>
+                    <option>Diploma</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="qualificationEvidence">Upload Evidence of Certificate</label>
+                <input type="file" class="form-control-file" name="qualificationEvidence">
+            </div>
+
+            <div class="form-group">
+                <label for="specialization">Specialization</label>
+                <input type="text" class="form-control" name="specialization" placeholder="Enter Specialization">
+            </div>
+
+            <div class="form-group">
+                <label for="institutionoflearning">Institution of Learning</label>
+                <input type="text" class="form-control" name="institutionoflearning" placeholder="Enter Institution of Learning">
+            </div>
+
+            <div class="form-group">
+                <label for="yearofuniversitystarting">Year of University Starting</label>
+                <input type="date" class="form-control" name="yearofuniversitystarting" placeholder="Enter Year of University Starting">
+            </div>
+
+            <div class="form-group">
+                <label for="yearofuniversitycompletion">Year of University Completion</label>
+                <input type="date" class="form-control" name="yearofUniversitycompletion" placeholder="Enter Year of University Completion">
+            </div>
+
+            <div class="form-group">
+                <label for="workExperience">Work Experience</label>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Institution of Work</th>
+                            <th scope="col">Year of Starting</th>
+                            <th scope="col">Years of Completion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control" placeholder="Enter Institution of Work"></td>
+                            <td><input type="datetime" class="form-control" placeholder="Enter Year of Services"></td>
+                            <td><input type="date" class="form-control" placeholder="Enter Years of Experience"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label for="totalyearsofworkexperience">Total Years of Work Experience</label>
+                <input type="text" class="form-control" name="totalyearsofworkexperience" placeholder="Enter Total Years of Work Experience">
+            </div>
+
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" name="state" placeholder="Enter State">
+            </div>
+            <div class="form-group">
+                <label for="county">County</label>
+                <input type="text" class="form-control" name="county" placeholder="Enter County">
+            </div>
+
+            <div class="form-group">
+                <label for="constituency">Constituency</label>
+                <input type="text" class="form-control" name="constituency" placeholder="Enter Constituency">
+            </div>
+
+            <div class="form-group">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" class="form-control" name="phonenumber" placeholder="Enter Phone Number">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter Email">
+            </div>
+
+            <div class="form-group">
+                <label for="nationalid">Upload Nationality ID</label>
+                <input type="file" class="form-control-file" name="nationalid">
+            </div>
+
+            <div class="form-group">
+                <label for="cv">Upload CV</label>
+                <input type="file" class="form-control-file" name="cv">
+            </div>      
+
+            
+
+            
+
+            <div class="form-group">
+                <label for="previousworkexperience">Upload Previous Work Experience</label>
+                <input type="file" class="form-control-file" name="previousworkexperience">
+            </div>
+
+            
+
+            
+
+           
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+</body>
+</html>
